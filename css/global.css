@@ -11,6 +11,7 @@
 
 body {
     background: linear-gradient(to bottom, #efefef, white) no-repeat;
+    
 }
 
 a {
@@ -18,12 +19,20 @@ a {
     text-decoration: none;
 }
 
+
 .wrapper {
-    padding: 1em 0;
+    padding: 25px ;
+    background-color: white;
+    box-shadow: 0px 4px 12px #aaa;
+    margin-bottom: 30px;
+}
+
+header{
+    font-size: 20px;
 }
 
 body > header {
-    margin-bottom: 2em;
+    margin-bottom: 20px;
     background: white;
     box-shadow: 1px 0px 8px rgb(200, 200, 200);
 }
@@ -37,30 +46,32 @@ header .user {
 }
 
 header .user a {
-    font-size: 0.8em;
+    font-size: 0.8rem;
     color: #89949b;
     padding-top: 5px;
 }
 
 main h2 {
-    margin-top: 1em;
+    margin-top: 4px;
 }
-
 
 main article {
     display: inline-block;
 }
 
+aside{
+    font-size: 1rem;
+}
 h3 {
     color: #b8c3c9;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1rem !important;
     font-weight: normal;
     margin-bottom: 10px;
 }
 
 nav ul li a { 
-    font-size: 1em;
+    font-size: 0.8rem;
     font-weight: normal;
     color: #828c92;
 }
@@ -85,14 +96,15 @@ nav ul li:last-child {
 
 h1 {
     color: #4b5c66;
-    font-size: 2em;
+    font-size: 1.5rem !important;
     font-weight: normal;
-    margin: 0 0 8px 0;
 }
+
+
 
 .name p { 
     color: #a0aab1;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .name p img { 
@@ -102,7 +114,7 @@ h1 {
 
 .stats-links {
     color: #4b5c66;
-    font-size: 12px;
+    font-size: 0.8rem;
     padding: 15px 0px 10px 0px;
     border-bottom: 1px solid #e1e6e9;
     margin-bottom: 20px;
@@ -117,13 +129,13 @@ h1 {
 }
 
 .stats-links a {
-    font-size: 1em;
+    font-size: 0.8rem;
     font-weight: normal;
     color: #4b5c66;
 }
 
 h2 {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: normal;
     color: #4b5c66;
 }
@@ -151,7 +163,7 @@ input.submit {
 }
 
 .station {
-    font-size: 1em;
+    font-size: 0.7rem;
     color: #008fd5;
     border-radius: 5px;
     border: 1px solid #b8c3c9;
@@ -160,6 +172,8 @@ input.submit {
     box-shadow: 1px 1px #d5d5d5;
     background: url("../img/icon/station.png") no-repeat 8px;
     transition: all 0.4s;
+    display: flex;
+    align-items: center;
 }
 
 .station:hover {
@@ -170,9 +184,9 @@ input.submit {
 
 
 #albums article {
-    font-size: 13px;
+    font-size: 0.7rem;
     color: #89949b;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 #albums article img {
@@ -217,8 +231,36 @@ nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; 
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
 
-@media screen and (max-width:550px){
-    .search{
+@media screen and (max-width:576px){
+    .searchBar{
         display: none;
     }
 }
+
+.landingHeader{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:376px){
+    .name img{
+        display: none;
+    }
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+.main{
+    padding: 0;
+}
+
