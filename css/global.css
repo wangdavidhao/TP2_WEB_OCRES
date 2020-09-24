@@ -231,22 +231,13 @@ nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; 
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
 
-@media screen and (max-width:576px){
-    .searchBar{
-        display: none;
-    }
-}
+
 
 .landingHeader{
     display: flex;
     justify-content: space-around;
 }
 
-@media screen and (max-width:376px){
-    .name img{
-        display: none;
-    }
-}
 
 .no-gutters {
     margin-right: 0;
@@ -266,4 +257,26 @@ nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
 i{
     margin-right: 5px;
+}
+
+.container-fluid{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.remove{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media screen and (max-width:576px){
+    .searchBar{
+        display: none;
+    }
+}
+
+@media screen and (max-width:376px){
+    .name img{
+        display: none;
+    }
 }
