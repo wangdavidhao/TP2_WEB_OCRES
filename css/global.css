@@ -135,7 +135,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1rem;
+    font-size: 1.3rem !important;
     font-weight: normal;
     color: #4b5c66;
 }
@@ -264,3 +264,6 @@ nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
     padding: 0;
 }
 
+i{
+    margin-right: 5px;
+}
