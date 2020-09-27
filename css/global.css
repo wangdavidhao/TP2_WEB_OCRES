@@ -11,6 +11,7 @@
 
 body {
     background: linear-gradient(to bottom, #efefef, white) no-repeat;
+    min-width: 300px;
     
 }
 
@@ -269,6 +270,7 @@ i{
     padding: 0 !important;
 }
 
+/*Media queries*/
 @media screen and (max-width:576px){
     .searchBar{
         display: none;
@@ -278,5 +280,24 @@ i{
 @media screen and (max-width:376px){
     .name img{
         display: none;
+    }
+}
+
+/*Points de rupture*/
+@media  screen and (max-width:450px){
+    body h1,h2,h3,p,span,a{
+        font-size: 0.7rem !important;
+    }
+}
+
+@media screen and (min-width:600px){
+    body h1,h2,h3,p,span,a{
+        font-size: 0.9rem !important;
+    }
+}
+
+@media screen and (min-width:1400px){
+    body h1,h2,h3,p,span,a{
+        font-size: 1rem !important;
     }
 }
